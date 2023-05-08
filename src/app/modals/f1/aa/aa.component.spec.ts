@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { AAComponent } from './aa.component';
+
+describe('AAComponent', () => {
+  let component: AAComponent;
+  let fixture: ComponentFixture<AAComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ AAComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(AAComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
